@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    
+   <form  novalidate method="POST" autocomplete="on">
+       <label for="fname">First naem:</label>
+       <input type="text" name="fname" id="fnaem" autofocus placeholder="Enter your name" required><br><br>
+<!-- wride autocamplete  -->
+       <label for="male">male</label>
+       <input type="radio" name="gender" id="male" value="male" autocomplete="name"><br>
+
+       <label for="female">female</label>
+       <input type="radio" name="gender" id="female" value="female"><br><br>
+
+       <label>rules1</label>
+       <input type="checkbox" name="rules1" id="rules1" value="1"><br>
+
+       <label>rules2</label>
+       <input type="checkbox" name="rules2" id="rules2" value="1"><br><br>
+
+       <label for="city">City</label>
+       <select name="city" id="city">
+           <option value="0" disabled selected>chose city</option>
+           <optgroup label="Fars">
+                <option value="shiraz">shiraz</option> 
+                <option value="darab">darab</option>  
+           </optgroup>
+           <optgroup label="Hormozgan">
+                <option value="bandarabas" >bandrabas</option>
+                <option value="kish">kish</option>
+           </optgroup></select>
+           <br><br>
+<!-- eshkal dareee -->
+           <label for="city">Car</label>
+       <select name="car" id="car" multiple>
+           <option value="0" disabled selected>chose car</option>
+           <optgroup label="Iran">
+                <option value="pride">pride</option> 
+                <option value="samand">samand</option> 
+            </optgroup>    
+            <optgroup label="German">
+                <option value="BMW">BMW</option> 
+                <option value="benz">benz</option>
+           </optgroup></select>
+
+           <br><br>
+
+           <label for="browser_list">what's your browser?</label>
+           <input list="browsers" name="browser" id="browser_list">
+           <datalist id="browsers">
+               <option value="Firfox">
+               <option value="Chrome">
+               <option value="Opera">
+           </datalist>
+       
+           <br><br>
+
+           <label for="address">Address</label><br>
+           <textarea name="address" id="address" rows="5" cols="30">write your address</textarea>
+           
+           <br><br>
+
+           <label for="streetNo">Street No:</label>
+           <input type="number" name="streetNo" id="streetNo" max="10" min="1">
+   
+           <br><br>
+
+           <button type="submit">Submit
+               <img src="https://images.app.goo.gl/YkwGFmpX2SQmcbVY9">
+           </button>
+           <button type="reset">Reset</button>
+           <button type="button">i do nothing</button>
+
+        </form>
+</body>
+
+</html>
