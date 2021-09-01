@@ -7,8 +7,8 @@
 </head>
 
 <body>
-    
-   <form  novalidate method="POST" autocomplete="on">
+    <!-- > wride enctype < -->
+   <form  novalidate method="POST" autocomplete="on" enctype="multipart/form-data">
        <label for="fname">First naem:</label>
        <input type="text" name="fname" id="fnaem" autofocus placeholder="Enter your name" required><br><br>
 <!-- wride autocamplete  -->
@@ -36,7 +36,7 @@
                 <option value="kish">kish</option>
            </optgroup></select>
            <br><br>
-<!-- eshkal dareee -->
+
            <label for="city">Car</label>
        <select name="car" id="car" multiple>
            <option value="0" disabled selected>chose car</option>
@@ -70,6 +70,19 @@
            <input type="number" name="streetNo" id="streetNo" max="10" min="1">
    
            <br><br>
+           <!--eshkal dare  -->
+            <input type="hidden" name="hidden" value="1"><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="enter your email" id="email"><br>
+            <label for="pass" >Password</label>
+            <input type="password" name="pass" id="pass"><br>
+            <label for="search">search</label>
+            <input type="search" name="search" id="search"><br> 
+            <label for="date">Date</label>
+            <input type="date" name="data" id="date"><br> 
+            <!-- wride more atribute -->
+            <input type="file" name="upload"  ><br>
+           <br>
 
            <button type="submit">Submit
                <img src="https://images.app.goo.gl/YkwGFmpX2SQmcbVY9">
@@ -77,6 +90,9 @@
            <button type="reset">Reset</button>
            <button type="button">i do nothing</button>
 
+           
+
+           
         </form>
 </body>
 

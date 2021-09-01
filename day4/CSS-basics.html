@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>CSS</title>
+    <style>
+        body , *{
+            font-style:inherit;
+            font-family:monospace;
+            font-weight: 700;
+        }
+        table , tr , td , th{
+            border : 1px solid black;
+            border-collapse: collapse;
+        }
+        p{
+            color: darkviolet;
+            /*color: #fff;*/
+            /*color: rgb(123, 184, 63);*/
+           /* color : rgba(123, 184, 63, 0.8);*/
+        }
+        #p1 {
+            color: deeppink;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .p2 {
+            color: gold;
+            background-color: dimgrey;
+        }
+        .div {
+            background-color: lightgray;
+        }
+        .div>p {
+            color: lightseagreen;
+        }
+    </style>
+</head>
+
+<body dir="auto">
+    
+    <h1 style="color: cornflowerblue; font-size: 60px;">Welcome</h1>
+    <div class="div">
+        <h1>heading1</h1>
+        <p>ectetur adipisicing elit.</span>  Commodi natus delectus, est voluptatibus dignissimos aut numquam ullam, dolores in doloribus ab optio fugiat eveni</p>
+    </div>
+    <p id="p1">pragragh1</p>
+    <p class="p2">pragragh2</p>
+    <p class="p2">pragragh3</p>
+    <p>Lorem ipsum dolor sit amet,<span class="p2">consectetur adipisicing elit.</span>  Commodi natus delectus, est voluptatibus dignissimos aut numquam ullam, dolores in doloribus ab optio fugiat eveniet, eos ut voluptatem tempora dolor impedit.</p>
+</body>
+
+</html>
