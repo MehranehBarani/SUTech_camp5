@@ -1,0 +1,197 @@
+<!-- <html lang="fa">
+
+<head>
+    <meta charset="UTF-8" >
+    <title>tamrin-table</title>
+    
+    <style>
+        .table {
+            border: 2px solid gray;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .table tr :nth-child(odd){
+            background-color: rgb(170, 168, 168);
+        }
+
+        .table tr :nth-child(1){
+            background-color: rgb(82, 79, 79);
+        }
+    </style> 
+      
+</head>
+
+<body dir="auto">
+    
+    <table class="table">
+        <tr>
+            <th>شهر</th>
+            <th>سال تولد</th>
+            <th>نام</th>
+        </tr>
+        <tr>
+            <td>شیراز</td>
+            <td>22</td>
+            <td>عباس</td>
+        </tr>
+        <tr>
+            <td>شیراز</td>
+            <td>22</td>
+            <td>عباس</td>
+        </tr>
+        <tr>
+            <td>شیراز</td>
+            <td>22</td>
+            <td>عباس</td>
+        </tr>
+        <tr>
+            <td>شیراز</td>
+            <td>22</td>
+            <td>عباس</td>
+        </tr>
+        <tr>
+            <td>شیراز</td>
+            <td>22</td>
+            <td>عباس</td>
+        </tr>                                
+    </table>
+
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <title>tamrin-table</title>
+    <style>
+        table , tr , td , th{
+            border : 1px solid grey;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .table tr :nth-child(odd){
+            background-color: rgb(170, 168, 168);
+        }
+
+        .head tr :nth-child(1){
+            background-color: rgb(112, 109, 109);
+        }
+        .star {
+            color: red;
+        }
+
+        input[type=text] {
+            width: 150px;
+            height: 30px;
+            padding: 5px;
+            color: darkgrey;
+            border-radius: 5px;
+            border:1px solid rgb(199, 196, 196);
+        }
+        input[type=date] {
+            width: 150px;
+            height: 30px;
+            padding: 5px;
+            color: darkgrey;
+            border:1px solid rgb(199, 196, 196);
+        }
+        input[type=password] {
+            width: 150px;
+            height: 30px;
+            padding: 5px;
+            color: darkgrey;
+
+        }
+        input[type=email] {
+            width: 150px;
+            height: 30px;
+            padding: 5px;
+            color: darkgrey;
+            border-radius: 5px;
+        }
+
+        .buttom {
+            width: 80px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        .set {
+            color: white;
+            background-color:cornflowerblue;
+        }
+        .reset {
+            background-color: rgb(211, 207, 207);
+        }
+
+    </style>
+</head>
+
+<body dir="rtl">
+   <!-- <table class="table">
+     
+    <tr class="head">
+        <th>شهر</th>
+        <th>سال تولد</th>
+        <th>نام</th>
+    </tr>
+    <tr>
+        <td>شیراز</td>
+        <td>22</td>
+        <td>عباس</td>
+    </tr>
+    <tr>
+        <td>شیراز</td>
+        <td>22</td>
+        <td>عباس</td>
+    </tr>
+    <tr>
+        <td>شیراز</td>
+        <td>22</td>
+        <td>عباس</td>
+    </tr>
+    <tr>
+        <td>شیراز</td>
+        <td>22</td>
+        <td>عباس</td>
+    </tr>
+    <tr>
+        <td>شیراز</td>
+        <td>22</td>
+        <td>عباس</td>
+    </tr>  
+    
+   </table> -->
+
+
+   <form>
+       <label for="fname">نام و نام خانوادگی<span class="star">*</span></label><br>
+       <input required type="text" name="fname" id="fname" placeholder="مثال:مهرانه بارانی"><br><br>
+
+       <label for="callN">شماره تماس<span class="star">*</span></label><br>
+       <input required type="text" name="callN" id="callN" placeholder="مثال:09173541166"><br><br>  
+       
+       <label for="date">تاریخ تولد</label><br>
+       <input  type="date" name="date" id="date"> <br><br>
+
+       <label for="email">ایمیل<span class="star">*</span></label><br>
+       <input type="email" name="email" id="emial" placeholder="مثال:mehranehbrani90@gmail.com"><br><br>
+
+       <label for="pass">رمزعبور<span class="star">*</span></label><br>
+       <input type="password" name="pass" id="pass"><br><br>
+
+       <div>
+         <button type="submit" class="buttom set" >ثبت نام</button>
+         <button type="reset" class="buttom reset" >پاک کن!</button>  
+       </div>
+       
+        
+
+       
+   </form>
+</body>
+
+</html>

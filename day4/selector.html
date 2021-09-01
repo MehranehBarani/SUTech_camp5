@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>box</title>
+    <style>
+       
+       .box {
+           display:inline-block;
+           width: 100px;
+           height: 100px;
+           margin-right: 10px;
+       }
+       .box > p {
+           color: black;
+       }
+       P {
+           color:darkorange;
+       }
+       .box p {
+            color:black;
+       }
+       .pink-back {  
+           background-color: deeppink ;           
+       }
+       
+       .green-back {
+            background-color: greenyellow ;
+       }
+       .yellow-back {
+           background-color: khaki;
+           /* display: none; */
+           /* visibility: hidden; */
+       }
+       
+       .wrapper {
+           margin: 30px;
+       }
+
+    </style>
+</head>
+
+<body >
+    <div class="wrapper">
+        <div class="box pink-back"><div><p>p1</p></div><p>box1</p></div>
+        <div class="box green-back"><div><p>p2</p></div><p>box2</p></div>
+        <div class="box yellow-back"><div><p>p3</p></div><p>box3</p></div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta similique, et repellat aspernatur ab nisi possimus quos soluta ex eveniet dolorem voluptatum exercitationem doloremque quod architecto non nihil quasi doloribus?</p>
+</body>
+
+</html>
