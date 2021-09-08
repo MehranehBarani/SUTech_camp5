@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تودو!</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body dir="rtl">
+    <div class="page-container">
+        <div class="flex-container">
+            <header>
+                <div class="header-info">
+                    <h1>تودو!</h1>
+                    <div class="user-info">خوش آمدید، عباس مهربانیان</div>
+                </div>
+                <a href="#" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </header>
+
+            <form >
+                <div class="input-wrapper">
+                    <input type="text" name="todo" id="todo" placeholder="یک کار جدید اضافه کن ;)" class="new-todo">
+                </div>
+                <button type="button" class="add-todo">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </form>
+
+
+            <div class="todo-list-container">
+                <ul class="list">
+                    <!-- <li class="todo-item">
+                        <div class="desc">
+                            یک متن برای انجام دادن.
+                        </div>
+                        <div class="options">
+                            <button class="todo-btn">
+                                <i class="far fa-trash-alt"></i>
+                            </button>
+                            <button class="todo-btn">
+                                <i class="far fa-edit"></i>
+                            </button>
+                            <button class="todo-btn">
+                                <i class="fas fa-check"></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="todo-item">
+                        <div class="desc">
+                            یک متن برای انجام دادن.
+                        </div>
+                        <div class="options">
+                            <button class="todo-btn">
+                                <i class="far fa-trash-alt"></i>
+                            </button>
+                            <button class="todo-btn">
+                                <i class="far fa-edit"></i>
+                            </button>
+                            <button class="todo-btn">
+                                <i class="fas fa-check"></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="todo-item done">
+                        <div class="desc">
+                            یک متن برای انجام دادن.
+                        </div>
+                        <div class="options">
+                            <button class="todo-btn">
+                                <i class="far fa-trash-alt"></i>
+                            </button>
+                            <button class="todo-btn">
+                                <i class="far fa-edit"></i>
+                            </button>
+                            <button class="todo-btn">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.add-todo').click(function(){
+                if($('#todo').val() != ''){
+                var newitem = '<li class="todo-item animate__animated animate__fadeInDown"><div class="desc">'+ $('#todo').val() +'</div> <div class="options"> <button class="todo-btn"> <i class="far fa-trash-alt delete"></i> </button> <button class="todo-btn"> <i class="far fa-edit"></i> </button> <button class="todo-btn"> <i class="fas fa-times"></i> </button> </div></li>';
+                $('ul.list').append(newitem);
+                $('#todo').val(''); }
+            });
+            $('li.delete').click(function(){
+                $('li.delete').parent().parent().parent().removeClass('todo-item');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+body,* {
+        font-family: Shabnam; 
+}
+
+body {
+    margin: 0;
+}
+
+.back-footage {
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* width: 100vh;
+    height: 100vh; */
+    min-width: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.back-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* width: 100vh;
+    height: 100vh; ; */
+    background-color: rgb(0, 0, 0,0.2);
+}
+
+.card {
+    position: relative;
+    width: 275px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 25px 0px rgb(0 0 0 / 20%);
+    padding: 50px;
+    color: #3F3F3F;
+    
+}
+
+.flex-container {
+    display: flex;
+    height: 100vh;
+    /* width: 100vh; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.card > .header h1 {
+    margin-top: 0px;
+}
+
+.card > .header {
+    text-align: center;
+}
+
+.card > .content p {
+    text-size-adjust: 15px ;
+    font-weight: 300;
+}
+
+.card input{
+    border:0;
+    border-bottom:1px solid #cbcbcb;
+    margin: bottom 15px;
+    display: block;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.card input:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.card input:focus::placeholder{
+    color: black;
+}
+
+.card input::placeholder {
+    font-size: 16px;
+}
+
+.card button {
+    border: 0;
+    width: 100%;
+    padding: 15px;
+    font-size: 17px;
+    background-color: #c7a480;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+}
+
+.card small.form-error {
+    color: red;
+    position: relative;
+    /* top:-10px; */
+}
+
+.card > .footer {
+    text-align: center;
+}
+
+.card > .footer p {
+    margin-bottom: 0;
+}
+
+.card > .footer a{
+    text-decoration: none;
+}

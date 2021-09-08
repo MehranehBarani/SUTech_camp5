@@ -1,0 +1,73 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+    margin: 30px 80px;
+    padding: 10px;
+}
+#name{
+    display: block;
+}
+#cost{
+    display: block;
+}
+#dec{
+    display: block;
+}
+.table{
+    display: block;
+    margin-right: 70px;
+}
+.info{
+    margin-bottom: 20px;
+    margin-left:50px;
+}
+input{
+    border: none;
+    border-bottom: 1px solid #FF0099;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.747);
+}
+
+select{
+    border: none;
+    border-bottom: 1px solid #FF0099;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.747);
+}
+.manage_btn{
+    background-color: #FF0099;
+    border :none;
+    border-radius: 5px;
+    width: auto;
+    height: 30px;
+    color:#2b2b2b;
+    line-height: 1px;
+    margin: 0 10px;
+}
+.form_btn{
+    background-color: #FF0099;
+    border :none;
+    border-radius: 5px;
+    width: auto;
+    height: 30px;
+    color:#2b2b2b;
+    line-height: 1px;
+    
+}
+.btn{
+    display: block;
+}
+
+body{
+    background: #FF0099;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.navbar navbar-light{
+    background-color: rgb(77, 3, 77);
+}
+
