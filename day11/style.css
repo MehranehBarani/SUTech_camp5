@@ -1,0 +1,550 @@
+body , *{
+    font-size: Shabanm;
+}
+
+body{
+    margin:0;
+}
+
+.container .right{
+    display: flex;
+    align-items: center;
+}
+
+.container .right .search{
+    width: 100%;
+}
+.row{
+ padding: 35px 0;   
+}
+
+
+.right .search input {
+    background-color:rgb(248 249 250);
+    padding: 10px 20px;
+    border: none;
+}
+
+.right .search input::placeholder{
+    font-weight: 300;
+    font-size: 15px;
+    color: rgb(187, 187, 187);
+}
+
+.form-control:focus{
+    border-color: #9b9da0;
+    box-shadow: 0 0 0 0.25rem rgb(163 163 164 / 25%);
+    background-color: white;
+}
+
+.search{
+    position:relative;
+}
+
+.search i{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+
+.navar-light .navbar-nav .nav-link{
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.btn-upgrade{
+    border: none;
+    padding: 7px 15px;
+    border-radius: 35px;
+    background-color: #FFD96E;
+    color: #533200;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    align-items: center;
+}
+
+.usermenu{
+    color: #4a4a4a;
+}
+
+.left small{
+    display: block;
+    color: #727272;
+    font-size: 12px;
+    font-weight: 300;
+}
+.row .u-picture, .info {
+    margin-left: 5px;
+}
+
+ .info{
+    position: relative;
+}
+/*
+.info i{
+    position: absolute;
+    left:6px;
+    top: 3px;
+} */
+
+.bell{
+    font-size: 25px;
+    position: relative;
+    left: -30px;
+}
+
+
+.left .u-picture img{
+    position: relative;
+    border-radius: 15px;
+}
+
+.left .u-picture > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius:15px ;
+    /* background-color: #a8a8a8; */
+    opacity: 0.3;
+    transition: 0.2 opacity ease-in;
+}
+
+ .left .u-picture > .overlay:hover{
+    background-color: unset;
+} 
+
+a{
+    text-decoration: none;
+}
+
+ .bell::before{
+    content:'' ;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid white;
+    top:8px;
+    left:12px;
+} 
+
+.left .bell > .new {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid white;
+    top:8px;
+    left:12px;
+}
+
+.left .dropdown-menu{
+    border: none;
+    box-shadow: rgb(74 74 74 / 20%) 0px 5px 20px;
+    border-radius: 18px;
+    font-size: 14px;
+    top:55px !important;
+    right: -10px !important;
+}
+
+.dropdown-item.active , .dropdown-item:active{
+    background-color: #7d7d7d;
+}
+
+
+.card .article-writer{
+  display:block; 
+  max-width: 85px;
+  border: 4px solid white;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  top: -40px; 
+  margin-bottom: -35px;
+}
+
+
+main{
+    background-color: #F8F9FA;
+    padding: 45px 0;
+}
+
+.card.post{
+    max-width: 360px;
+    margin: auto;
+}
+
+.card{
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 1px 20px rgb(74 74 74 / 10%);
+}
+
+.card.post .cord-title{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #353535;
+    margin-bottom: 20px;
+}
+
+.card .card-img-top{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+} 
+
+.card.post .card-text{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 23px;
+    color: #353535;
+}
+
+.card.post .card-body{
+    padding: 15px 30px 30px 30px;
+}
+
+.card.post .post-img{
+    position: relative;
+}
+
+.card.post .post-img > .overlay{
+    background-color: #626262;
+    position: absolute;
+    opacity: 0.3;
+    width: 100%;
+    top:0;
+    left:0;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+
+}
+
+.page-link {
+    margin: 0 10px;
+    box-shadow: 0 1px 10px rgb(30 / 39/ 39 / 20%);
+    color: #4a4a4a;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Shabnam FD';
+}
+
+.page-item-active .page-link{
+    background-color: #585858;
+    border-color: unset;
+}
+
+.page-link:hover{
+    color: #2e2e2e;
+    background-color: #d1d1d1;
+    border-color: unset;
+}
+
+.pagination{
+    justify-content: center;
+}
+
+.post-container .card.post .badge{
+    background-color: #cd2424cf;
+    color: white;
+    position: relative;
+    right: 270px;
+    top: -30px;
+    font-size: .45em;
+
+}
+
+.container .trending-posts .trending-post{
+    background-color: #fff;
+    height: 310px;
+    box-shadow: 0 1px 20px #3131311f;
+    border-radius: 10px ;
+}
+
+.trending-posts .trending-post-wrapper{
+    padding: 20px;
+}
+
+.section-break{
+    margin-top: 100px;
+}
+
+.container .section-intro{
+    text-align: center;
+    color: #333333;
+}
+
+.container .section-intro h3{
+    font-weight: bold;
+}
+
+.container .section-intro p{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.end-of-page .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.end-of-page .whatsapp{
+    background-color: #25d366;
+}
+
+.end-of-page .whatsapp i,p,span{
+    color: white;
+    /* background-color: white; */
+}
+
+.end-of-page .whatsapp span{
+    columns: #25d366;
+}
+
+.end-of-page .whatsapp{
+    display: flex;
+    padding: 10px 30px;
+}
+
+.end-of-page .whatsapp .left{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: white;
+    color:#13ae4d;
+    border-radius: 100px;
+    padding: 8px 11px;
+}
+
+.end-of-page .whatsapp .left  a span{
+    color:#13ae4d;
+    font-size: 14px;
+}
+
+.end-of-page .whatsapp .right{
+    display: flex;
+    align-items: center;
+}
+
+.end-of-page .whatsapp .right p{
+    margin-bottom: 0;
+    font-weight: 200;
+    color: #f1f1f1;
+    font-size: 20px;
+}
+
+.end-of-page .whatsapp .fa-whatsapp{
+    display: block;
+    font-size: 40px;
+    margin-left: 15px;
+}
+
+.end-of-page{
+    font-family: Shabnam;
+}
+
+
+
+.end-of-page .footer .information .about-us{
+    display: flex;
+    flex-direction: column;
+}
+
+.end-of-page .footer .information .about-us p{
+    color: #818181;
+    line-height: 35px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.information .about-us .social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.information .about-us .social-media i{
+    margin-right: 10px;
+    font-size: 30px;
+    color:#818181 ;
+}
+
+
+.end-of-page .footer .information .attachment ul{
+    padding-right: 0;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.end-of-page .footer .information .attachment ul li a{
+    text-decoration: none;
+    color: #818181;
+    line-height: 35px;
+    font-weight: 300;    
+}
+
+.end-of-page .footer .information  .connections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin :0 80px;
+}
+
+
+
+.end-of-page .footer .connections .social-media{
+    margin-top: 40px;
+    max-width: 100%;
+    display: flex;
+
+}
+
+.end-of-page .footer .connections .social-media i{
+    font-size: 32px;
+    padding: 5px;
+    max-width: 100%;
+    color : #656565;
+}
+
+.post-container .post-info {
+    display: flex;
+    padding: 0 20px;
+}
+
+.post-container .post-info .info-box{
+    background-color: #ffffff;
+    opacity: 0.5;
+    box-shadow: 0 1px 15px rgb(49 49 49 / 20%);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color :#4a4a4a;
+    position: relative;
+    top:-65px;
+    display: none;
+    font-family: 'Shabnam FD';
+}
+
+.card.post:hover .info-box{
+    display: flex;
+}
+
+.post-container .post-info .info-box span{
+    color: #4a4a4a;
+    font-family: 'Shabnam FG' !important;
+}
+
+.post-container .post-info .info-box i{
+    font-size:20px;
+    margin-top:2.5px;
+}
+
+.footer-container .map{
+    border-radius: 10px;
+    border:1px solid rgb(202, 202, 202);
+}
+
+.end-of-page .ruls .right{
+    color: #7979798f;
+}
+
+.container.rules{
+    display: block;
+    padding:0;
+}
+
+.container.rules .row{
+    display: flex;
+    align-items: center;
+    padding:20px 0;
+}
+
+/* .container.rules .row .right{
+    display: flex;
+    align-items: center;
+    
+} */
+
+.container.rules .row .right p{
+    color:rgba(54, 53, 53, 0.877);
+    margin-bottom: 0;
+}
+
+.trending-posts .trending-post {
+    position: relative;
+}
+
+.trending-post .tr-background{
+    position: absolute;
+    top: 0;
+    left: 0;   
+    bottom: 0;
+    right: 0;
+}
+
+.trending-post .article-writer{
+    max-width: 85px;
+    max-height: 85px;
+    position: relative;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin: auto;
+    top:150px;
+}
+
+.trending-post .text{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    top: 100px;
+}
+
+.trending-post .text .name-category{
+    background-color: white;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    border: none;
+    border-radius: 40px;
+    padding:8px 0;
+}
+
+.trending-post .text .name-category span{
+    color:rgba(44, 44, 44, 0.877)
+}
+
+.trending-post .text p{
+    text-align: center;
+    display: flex;
+    margin: 15px 0;
+    color: white;
+    width: 200px;
+    align-content: center;
+}
+
+.slick-list {
+    height: 380px;
+}
+
+.trending-posts .trending-post-wrapper .trending-post{
+    background: url("1.jpg") no-repeat center / cover;
+    position: relative;
+}
+
+
